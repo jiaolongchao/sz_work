@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>品鸿课堂</title>
+    <script src="js/adaptive.js"></script>
+    <script src="js/zepto.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+   <!--视频-->
+    <section class="liveStream_banner"></section>
+    <section class="liveStream_freeclass">
+        <ul class="lsF_list" id="lsF_list">
+            <!--<li class="clearfix">
+                <span class="lsF_picLeft">
+                   <img src="" alt=""/>
+                   <em>22:56</em>
+                </span>
+                <h3>第一讲 从宏观经济政策把握投资大势</h3>
+                <em class="lsF_author">余品鸿</em>
+                <em class="lsF_author">3600人观看 &nbsp;&nbsp; 06-19</em>
+            </li>-->
+        </ul>
+        <div class="lsN_nomore">已无更多数据</div>
+    </section>
+   <script>
+       var page = 1;
+       var cur = 0;
+       $(function(){
+           //免费课堂列表
+           freeClassList(page);
+       })
+       function freeClassList(page){
+           cur++
+           console.log(cur)
+           $.ajax({
+               type: "GET",
+               url: "http://advisor-dev.0606.com.cn/api/course/free/list?limit=5&page=" + page + "&recommend=",
+               async:true,
+               dataType: "json",
+               success: function(datas){
+                   if(datas.code == 200){
+                       //$('#lsF_list').empty();
+                       var html = '';
+                       var data = datas.data;
+                       $.each(data, function(commentIndex, comment){
+                           html += '<li class="clearfix"><span class="lsF_picLeft"><img src='+ comment['cover_url'] +' alt=""/>' +
+                                   '<em>22:56</em></span><h3>' + comment['title'] + '</h3>' +
+                                   '<em class="lsF_author">'+ comment['advisor']['name'] +'</em><em class="lsF_author">'+ comment['advisor']['fans'] +'人观看 &nbsp;&nbsp; '+ timestamp(comment['create_time'])  +'</em></li>';
+                       });
+                       if(data.length == 0){
+                            $('.lsN_nomore').show();
+                       }
+                       $('#lsF_list').append(html);
+                   }else{
+                       console.log("数据返回错误");
+                   }
+               },error:function(){
+                   console.log("ajax请求失败");
+               }
+           });
+       }
+
+       //分页加载
+       $(window).scroll(function(){
+           var scrollTop = $(this).scrollTop();
+           var scrollHeight = $(document).height();
+           var windowHeight = $(this).height();
+           if(scrollTop + windowHeight == scrollHeight){
+               console.log("已经到最底部了！");
+               page++;
+               freeClassList(page);
+           }
+       });
+
+       //时间戳格式装换
+       function timestamp(date){
+           if(date===""){
+               return "--";
+           }else{
+               var date = new Date(date*1000);
+               var Y = date.getFullYear() + '-';
+               var M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+               var D = date.getDate() + ' ';
+               D < 10 ? D = '0' + D:'D'
+               return (M+D);
+           }
+       }
+   </script>
+</body>
+</html>

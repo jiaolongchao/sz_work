@@ -1,0 +1,103 @@
+.cropsBanner img:nth-child(1) {
+    height: 1.53rem;
+}
+
+.cropsBanner img:nth-child(2) {
+    height: 1.36rem;
+}
+
+.cropsBanner img:nth-child(3) {
+    height: 1.76rem;
+}
+
+.cropsBanner img:nth-child(4) {
+    height: 2.14rem;
+}
+
+.cropsBanner img:nth-child(5) {
+    height: 0.88rem;
+}
+
+.ty_teacher-1 {
+    margin: 0 auto;
+    margin-top: 0.48rem;
+    background: url(../images/gold-img/teacher_07.jpg) no-repeat;
+    width: 7.5rem;
+    height: 4.24rem;
+    background-size: 100%;
+    margin-bottom: 0.3rem;
+}
+
+.ty_teacher-2 {
+    margin: 0 auto;
+    margin-top: 0.48rem;
+    background: url(../images/gold-img/teacher_09.jpg) no-repeat;
+    width: 7.5rem;
+    height: 4.24rem;
+    background-size: 100%;
+    margin-bottom: 0.3rem;
+}
+
+.ty_teacher-3 {
+    margin: 0 auto;
+    margin-top: 0.48rem;
+    background: url(../images/gold-img/teacher_11.png) no-repeat;
+    width: 7.5rem;
+    height: 3.40rem;
+    background-size: 100%;
+    margin-bottom: 0.6rem;
+}
+
+.ach_name {
+    width: 2.44rem;
+    height: 0.63rem;
+    text-align: center;
+    line-height: 0.62rem;
+    font-size: 0.3rem;
+    color: #FFFFFF;
+    background: url(../images/gold-img/ipone-zhi.png) no-repeat;
+    background-size: 100%;
+    margin: 0 0 0.5rem 0.3rem;
+}
+.ach_example p span {
+    color: #7941fe;
+}
+.subscribe{
+    background-color: #c8934d;
+    border: 1px solid #c8934d;
+    margin-bottom: 0.4rem;
+    position:relative;
+}
+.tsPrompt{
+	position: absolute;
+    width: 5rem;
+    text-align: center;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background: #333333;
+    color: #FFFFFF;
+    left: 50%;
+    margin-left: -2.5rem;
+    font-size: 0.24rem;
+    top: -0.75rem;
+    border-radius: 0.6rem;
+    font-size: 0.28rem;
+    letter-spacing: 0rem;
+    display: none;
+}
+.bojin{
+    display: block;
+    cursor: pointer;
+    font-size: 0.28rem;
+    line-height: 0.28rem;
+    text-align: center;
+    color: #978c88;
+    width: 1.5rem;
+    margin: 0 auto;
+    margin-bottom: 0.3rem;
+    border-bottom: 1px solid;
+    padding-bottom: 0.05rem;
+}
+.price_tit{
+    font-size: 0.34rem;
+}

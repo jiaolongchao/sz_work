@@ -1,0 +1,356 @@
+body {
+    /*background: url("../images/nuggets/body-bg.jpg");
+    background-repeat: repeat-x;
+    background-size: 10px 100%;*/
+}
+/*
+头部的样式开始
+*/
+.wrapper-top {
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.wrapper-top img:nth-child(1) {
+    display: block;
+    width: 7.02rem;
+    height: 2.92rem;
+    margin: 0.3rem auto 0.6rem;
+}
+.wrapper-top img:nth-child(2) {
+    display: block;
+    width: 7.38rem;
+    height: 2.77rem;
+    margin: 0 auto;
+}
+/*
+头部的样式结束
+*/
+
+/*尊贵服务的样式开始*/
+.service {
+    width: 100%;
+}
+.service .xian {
+    display: block;
+    height: 0.04rem;
+    width: 6.90rem;
+    margin: 0 auto;
+}
+.service-title{
+    margin: 0.4rem auto;
+}
+.service p {
+    text-align: center;
+}
+.service-title p:nth-child(1) {
+    font-size: 0.58rem;
+    height: 0.58rem;
+    line-height: 0.58rem;
+    margin-bottom: 0.2rem;
+    color: #DFCAB4;
+}
+.service-title p:nth-child(2) {
+    font-size: 0.36rem;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    color: #DFCAB4;
+}
+.service-content{
+    margin-top: 0.3rem;
+}
+.service-content p {
+    font-size: 0.3rem;
+    line-height: 0.3rem;
+    color: #AD8E74;
+    margin-bottom: 0.2rem;
+}
+.service-content p:last-child{
+    margin-bottom: 0;
+}
+/*尊贵服务的样式结束*/
+/*尊享八大礼遇的开始*/
+.courtesy {
+    margin-top: 1.20rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+.courtesy-title {
+    font-size: 0.48rem;
+    text-align: center;
+    color: #D5BFA4;
+    line-height: 1.60rem;
+    width: 6.96rem;
+    background: url(../images/nuggets/liyu-bg.png) no-repeat;
+    background-size: 6.96rem 1.60rem;
+    margin: 0 auto;
+    margin-bottom: 0.4rem;
+}
+.courtesy-content{
+    width: 100%;
+}
+.courtesy-content p{
+    font-size: 0.288rem;
+    line-height: 0.3rem;
+    color: #AD8E74;
+    width: 7.0rem;
+    margin: 0 auto 0.3rem;
+}
+.courtesy-content p:last-child{
+    margin-bottom: 0;
+}
+/*尊享八大礼遇的结束*/
+/*团队介绍开始*/
+.team-presentation {
+    width: 100%;
+}
+
+.team-im {
+    position: relative;
+    width: 3.74rem;
+    height: 0.67rem;
+    background: url("../images/nuggets/team-in-bg.png") no-repeat;
+    background-size: 3.74rem 0.67rem;
+    padding-bottom: 0.3rem;
+    margin-left: 0.3rem;
+    padding-right: 3.1rem;
+    /*background: #ffffff;*/
+}
+
+.im-top {
+    position: absolute;
+    left: 1.1rem;
+    top: -0.14rem;
+    font-size: 0.42rem;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    color: #d4bea5;
+}
+
+.im-bottom {
+    position: absolute;
+    left: 1.1rem;
+    bottom: 0.05rem;
+    font-size: 0.3rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    color: #d4bea5;
+}
+
+.team-desc {
+    margin: 0 auto;
+    width: 6.90rem;
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+    color: #ac8e76;
+    margin-top: 0.58rem;
+    margin-bottom: 1.16rem;
+}
+
+.case {
+    width: 100%;
+}
+
+.case-title {
+    position: relative;
+    font-size: 0.4rem;
+    text-align: center;
+    color: #D5BFA4;
+    height: 1.60rem;
+    line-height: 1.60rem;
+    width: 6.96rem;
+    background: url(../images/nuggets/liyu-bg.png) no-repeat;
+    background-size: 6.96rem 1.60rem;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+}
+
+.case-title::after {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.02rem;
+    font-size: 0.28rem;
+    height: 0.28rem;
+    line-height: 0.28rem;
+    content: '历史收益仅供参考';
+}
+
+/*团队介绍结束*/
+.case-content {
+    width: 100%;
+
+}
+
+.case-content-tit {
+    position: relative;
+    height: 0.67rem;
+    width: 3.67rem;
+    background: url(../images/nuggets/team-in-bg.png) no-repeat;
+    background-size: 3.67rem 0.84rem;
+    margin-bottom: 0.4rem;
+    margin-left: 0.3rem;
+}
+
+.case-content-tit .case-content-tit-text {
+    position: absolute;
+    left: 1.1rem;
+    top: -0.05rem;
+    color: #d4bea5;
+    font-size: 0.42rem;
+    height: 0.42rem;
+    line-height: 0.42rem;
+}
+
+.case-content-desc {
+    width: 6.9rem;
+    margin: 0 auto;
+    font-size: 0.29rem;
+    line-height: 0.5rem;
+    color: #ac8e76;
+    margin-bottom: 0.25rem;
+}
+
+.descc {
+    width: 6.98rem;
+}
+
+.case-content-im {
+    width: 6.90rem;
+    height: 3.76rem;
+    margin: 0 auto 0.8rem;
+}
+
+.case-content-im img {
+    width: 100%;
+    height: 100%;
+}
+
+.case-content-im-2 {
+    width: 6.90rem;
+    height: 3.53rem;
+    margin: 0 auto 0.8rem;
+}
+
+.case-content-im-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.case-content-im-3 {
+    width: 6.90rem;
+    height: 3.67rem;
+    margin: 0 auto 1.9rem;
+}
+
+.case-content-im-3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.90rem;
+
+}
+
+.subscribe_box {
+    position: fixed;
+    display: none;
+    left: 0;
+    bottom: 0rem;
+    width: 100%;
+    font-size: 0px;
+    height: 1.80rem;
+}
+.hua {
+    position: relative;
+    width: 100%;
+    height: 1.67rem;
+}
+
+.hua img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.subscribe-left {
+    float: left;
+    width: 4.70rem;
+    height: 1.80rem;
+    background: #846857;
+}
+
+.subscribe-right {
+    float: left;
+    width: 2.80rem;
+    height: 1.80rem;
+    line-height: 1.80rem;
+    background: #d4bea5;
+    color: #3c2b23;
+    text-align: center;
+    font-size: 0.521rem;
+}
+
+.desc-top {
+    color: #e6d3bd;
+    text-align: center;
+    font-size: 0.42rem;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.desc-bottom {
+    position: relative;
+    width: 100%;
+    height: 0.53rem;
+    text-align: right;
+}
+
+.desc-bottom img {
+    padding-right: 0.3rem;
+    width: 3.48rem;
+    height: 0.53rem;
+}
+
+.copyright {
+    position: absolute;
+    width: 100%;
+    bottom: 1.2rem;
+}
+
+.copyright p {
+    text-align: center;
+    color: #ac8e76;
+    margin-bottom: 0.2rem;
+    font-size: 0.26rem;
+    line-height: 0.26rem;
+}
+
+.copyright .mb {
+    margin-bottom: 0.6rem;
+}
+
+.copyright div {
+    text-align: center;
+    font-size: 0.3rem;
+    line-height: 0.3rem;
+    color: #d4bea5;
+}
+
+.tsPrompt{position: fixed;width: 5rem;text-align: center;height: 0.6rem;line-height: 0.6rem;background: #333333;color: #FFFFFF;left: 50%;margin-left: -2.5rem;font-size: 0.24rem;bottom: 2rem;border-radius: 0.6rem;font-size: 0.28rem;letter-spacing: 0rem;display: none;}
+.body-bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background: url("../images/nuggets/body-bg.jpg");
+    background-repeat: repeat-x;
+    background-size: 10px 100%;
+}
